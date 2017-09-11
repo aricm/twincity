@@ -1,0 +1,113 @@
+body {
+    font-family: $bodyFont;
+    font-size: 1rem; // 20px
+    background-color: #fff;
+    color: $textColor;
+}
+.no-scroll {
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    #openNavOverlay {
+        display: block;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: $linkColor;
+    text-decoration: none !important;
+    transition: color 0.2s ease-in-out;
+    &:hover {
+        color: $primaryColor;
+    }
+}
+
+h1,
+h2,
+h3,
+.title {
+    font-weight: 700;
+}
+h1 {
+    font-family: $headingFont;
+    font-size: 1.5625rem; // 25px
+}
+
+
+h2 {
+    font-family: $headingFontAlt;
+    font-size: 1.4375rem; // 23px
+}
+
+h3 {
+    font-family: $headingFont;
+    font-size: 1.375rem; // 22px
+}
+
+h4 {
+    font-family: $headingFontAlt;
+    font-size: 1.5625rem; // 25px
+}
+
+h1,h2,h3,h4 {
+    color: $primaryColor;
+    &.inverse {
+        color: #fff;
+    }
+}
+
+.title {
+    font-family: $headingFont;
+    font-size: 3.125rem; // 50px
+    color: $primaryColor;
+}
+
+.oswald {
+    font-family: $headingFont;
+}
+
+.txt-primary {
+    color: $primaryColor;
+}
+.txt-secondary {
+    color: $secondaryColor;
+}
+.txt-lg {
+    font-size: 1.5625rem; // 25px
+}
+
+.bg-light {
+    background-color: $lightGray;
+}
+
+#openNavOverlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99995;
+    display: none;
+    background-color: rgba(black,0.5);
+}
+
+@media screen and (min-width: 1050px) {
+    // release no-scroll above mobile viewport (max-width: 1049px)
+    body {
+        &.no-scroll {
+            overflow: auto;
+            #openNavOverlay {
+                display: none;
+            }
+        }
+    }
+    .close-nav {
+        display: none;
+    }
+}

@@ -1,0 +1,27 @@
+/** COLORS */
+
+$primaryColor: #0082ca; // blue
+$secondaryColor: #00b3e3; // blue2
+$darkGray: #58595b;
+$mediumGray: #e6e6e6; // footer contact bg
+$lightGray: #f2f2f2;
+
+$textColor: $darkGray;
+$linkColor: $secondaryColor;
+
+$headingFont: "Oswald", sans-serif;
+$headingFontAlt: "Times New Roman", serif;
+$bodyFont: "Open Sans", sans-serif;
+
+/** PARTIALS */
+
+@import "base";
+@import "header";
+// @import "forms";
+@import "navigation";
+// @import "mobile_nav";
+@import "content";
+// @import "blog";
+@import "footer";
+@import "overrides";
+// @import "ie";
