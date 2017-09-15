@@ -97,16 +97,12 @@ var mainNav = jQuery("#mainNav");
 jQuery(document).on("scroll", function() {
     if ( jQuery(document).scrollTop() > 156 ) {
         if(!isSticky) {
-            jQuery(siteHeader).hide();
             jQuery("body").addClass("sticky-header");
-            jQuery(siteHeader).fadeIn('fast');
             isSticky = true;
         }
     } else {
         if(isSticky) {
-            jQuery(siteHeader).hide();
             jQuery("body").removeClass("sticky-header");
-            jQuery(siteHeader).fadeIn('fast');
             isSticky = false;
         }
     }

@@ -7,8 +7,6 @@
     background-color: #231F20;
     a {
         display: block;
-        height: 85px;
-        line-height: 85px;
         color: #fff;
         text-transform: uppercase;
     }
@@ -22,18 +20,30 @@
     // margin-right: 32px;
     font-family: $headingFont;
     font-size: 20px;
+    // reset
     ul {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
         list-style: none;
         padding: 0;
         margin: 0;
     }
+    // top level
+    > ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        li {
+            position: relative;
+        }
+    }
 
     // Top level links
-    ul > li:not(.get-quote) > a {
-        position: relative;
+    > ul > li:not(.get-quote) {
+        > a {
+            position: relative;
+            height: 85px;
+            line-height: 85px;
+        }
+        // bottom animated 'border'
         &:after {
             content: '';
             position: absolute;
@@ -42,20 +52,21 @@
             max-height: 0;
             left: 0;
             bottom: 0;
-            opacity: 0;
+            // opacity: 0;
             background-color: $primaryColor;
             transition: all 0.2s ease-in-out;
         }
+        // bottom border on hover
         &:hover {
             &:after {
-                opacity: 1;
+                // opacity: 1;
                 height: 29px;
                 max-height: 29px;
             }
         }
     }
 
-    ul > li.current-menu-item > a:after {
+    > ul > li.current-menu-item > a:after {
         opacity: 1;
         height: 29px;
         max-height: 29px;
@@ -71,8 +82,30 @@
     }
 
 
-    // Second level menu
+    // Hide second level menu until hover
     ul ul {
-        display: none;
+        position: absolute;
+        left: 0;
+        z-index: 500;
+        width: 250px;
+        overflow: hidden;
+        background: $primaryColor;
+        // menu slide down animation
+        max-height: 0;
+        transition: max-height 0.2s ease-in-out;
+        box-shadow: 2px 2px 8px rgba(black,0.25);
+        li {
+            padding: 0;
+        }
+        a {
+            display: block;
+            padding: 16px 24px;
+        }
+    }
+    // Show second level menu on hover (animated slide down)
+    > ul > li.menu-item-has-children:hover {
+        > ul {
+            max-height: 1000px;
+        }
     }
 }
