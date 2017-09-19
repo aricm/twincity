@@ -34,7 +34,7 @@
             <nav id="mainNav" class="main-nav" role="navigation">
                <?php wp_nav_menu( array( 'theme_location' => 'main', 'container' => '' ) ); ?>
             </nav>
-            <!-- <a href="javascript:void(0);" class="get-quote" data-toggle="modal" data-target="#popForm">GET A QUOTE</a> -->
+            <a href="javascript:void(0);" class="get-quote" data-toggle="modal" data-target="#popForm">GET A QUICK QUOTE</a>
         </div>
     </div>
 </header>
