@@ -111,3 +111,17 @@
         }
     }
 }
+.get-quote {
+    background-color: #00b3e3;
+    padding: 0px 15px;
+    margin-left: 40px;
+    position: relative;
+    height: 85px;
+    line-height: 85px;
+    font-family: "Oswald",
+    sans-serif;
+    font-size: 20px;
+}
+.main-nav>ul>li#menu-item-33:not(.get-quote):after {
+    background-color: none!important;
+}

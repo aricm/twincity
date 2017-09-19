@@ -1,7 +1,99 @@
 main {
-    min-height: 900px; // tmp
+    min-height: 900px;
 }
 .ng-inverse {
     background-color: $primaryColor;
     color: #fff;
+}
+.button {
+    padding: 3px 25px;
+    background-color: #00b3e3;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: oswald;
+}
+.button:hover {
+    background-color: $primaryColor;
+    color: white;
+}
+.servicesection{
+    padding: 40px 0px 50px 0px;
+    h2{
+        font-family: $headingFont;
+        font-weight: bold;
+        font-size: 25px;
+        span {
+            letter-spacing: -4px;
+        }
+    }
+    ul {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        padding-left: 0px;
+        list-style: none;
+    }
+
+    li::before {
+        content: "• ";
+        color: $secondaryColor;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .bottomalign {
+        vertical-align: bottom;
+        position: absolute;
+        bottom: -45px;
+    }
+}
+.fifty-fifty-section-background {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    margin: 60px 0px;
+    min-height: 495px;
+    color: white;
+    background-color: $primaryColor;
+}
+
+.d-flex {
+    display: -webkit-box!important;
+    display: -webkit-flex!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+
+.fifty-percent-section.white-background {
+    width: 495px;
+    height: 100%;
+    padding: 0px 20px 20px 0px;
+    color: white;
+    background-color: $primaryColor;
+    h2 {
+        color: white;
+        font-family: $headingFont;
+        font-size: 50px;
+        padding: 40px 0px;
+        font-weight: bold;
+    }
+    h4{
+        color: white;
+        font-family: $headingFontAlt;
+        font-size: 25px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    span {
+        letter-spacing: -10px;
+    }
+}
+
+.container.padding0 {
+    padding: 0px;
+}
+
+.alignimage {
+    text-align: center;
+    margin: auto;
+    display: block;
 }

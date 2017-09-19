@@ -1,0 +1,283 @@
+/**
+* Front Page Slider
+*/
+
+.slider-wrap {
+    // needed to contain next/prev arrows
+    position: relative;
+}
+
+.slick-home-next,
+.slick-home-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: $sliderfont;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    cursor: pointer;
+    font-size: 8rem;
+    font-weight: 100;
+    border-radius: 0px;
+    padding: 0.5rem 1.5rem;
+    line-height: 0.7;
+    padding-bottom: 0rem;
+    &:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    }
+    &:focus {
+    }
+}
+
+.slick-home-prev {
+    left: 20px;
+}
+
+.slick-home-next {
+    right: 20px;
+}
+
+.slider {
+    background-color: $primaryColor;
+}
+
+.slider-slide {
+    position: relative;
+}
+
+.slider-content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff !important;
+    .inner-content {
+        position: absolute;
+        top: 53%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        padding: 24px 200px;
+    }
+    h1 {
+        font-size: 50px;
+        margin-bottom: 2rem;
+    }
+    h2 {
+        font-family: "Oswald", sans-serif;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    h3 {
+        font-size: 50px;
+        color: white;
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+    }
+    h4 {
+        font-size: 1.5625rem; // 25px
+        margin-bottom: 1.5rem;
+    }
+    p {
+        margin-bottom: 1.5rem;
+        &:last-child {
+            margin-bottom: 0px;
+            font-size: 35px;
+            line-height: 1;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            margin-top: 25px;
+            font-family: "Oswald", sans-serif;
+        }
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+.sliderbutton{
+    margin-top: 75px;
+    padding: 10px 25px;
+    background-color: $secondaryColor;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    font-family: $headingFont;
+    display: inline-block;
+    &:hover {
+        background-color: $primaryColor;
+        color: white;
+    }
+}
+.slider-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+    &:hover {
+        background-color: rgba(white, 0.2);
+    }
+}
+
+.slider-img {
+    background-size: cover;
+    padding-bottom: 30%;
+}
+
+@media screen and (max-width: 1249px) {
+    .slider-content {
+        h1 {
+            font-size: 2.3rem;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            margin-bottom: 1.5rem;
+        }
+        h3{
+            font-size: 50px;
+            color: white;
+            text-align: center;
+        }
+        h4 {
+            margin-bottom: 1rem;
+        }
+    }
+    .slider-button {
+        font-size: 1.25rem;
+        padding: 0.5rem 2rem;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .slider-img-busch {
+        max-width: 300px;
+    }
+    .slider-img-charity {
+        max-width: 40px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .slider-content {
+        .inner-content {
+            padding: 24px 120px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .slider {
+        margin-bottom: 1px;
+    }
+    .slider-content {
+        position: relative;
+        height: auto;
+        text-align: center;
+        padding: 24px;
+        .inner-content {
+            position: static;
+            transform: none;
+            padding: 0;
+        }
+    }
+    .slider-md-hidden {
+        display: none !important;
+    }
+    .slider-img-busch {
+        // center imgage
+        display: block;
+        margin: auto;
+        max-width: 100%;
+    }
+    .slick-home-next,
+    .slick-home-prev {
+        top: auto;
+        bottom: 70%;
+    }
+    .slick-home-next {
+        right: 10px;
+    }
+    .slick-home-prev {
+        left: 10px;
+    }
+}
+
+
+/**
+ * Testimonials on front-page
+ */
+
+.testimonials-c {
+    // container
+    padding: 90px 0;
+    h1 {
+        margin-bottom: 1.5rem;
+        color: $secondaryColor;
+        padding-left: 6%;
+    }
+    .btn-main {
+        position: absolute;
+        top: 63px;
+        padding: 0.25rem 1rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+        font-family: "Advent Pro", sans-serif;
+    }
+    .slick-testimonial-prev {
+        left: 0;
+    }
+    .slick-testimonial-next {
+        right: 0;
+    }
+    &:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.3;
+        background: url(img/concrete-bg.jpg) 0 0 no-repeat;
+        background-size: cover;
+    }
+}
+
+.testimonials-slider {
+    display: none;
+    max-width: 88%;
+    margin: auto;
+}
+
+
+/**
+ * Testimonials page
+ */
+
+.testimonials-listing {
+    margin: 2rem 0;
+    padding: 3rem 0;
+    &:nth-child(odd) {
+        background: $lightGray;
+    }
+    &:last-child {
+        margin-bottom: 4rem;
+    }
+    .the-testimonial {
+        // &:before,
+        // &:after {
+        //     content: '"';
+        //     display: inline;
+        // }
+    }
+}
