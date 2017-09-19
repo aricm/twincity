@@ -74,6 +74,8 @@
 
     .get-quote {
         padding: 0 16px;
+        height: 85px;
+        line-height: 85px;
         background-color: $secondaryColor;
         transition: all 0.2s ease-in-out;
         &:hover {
@@ -93,7 +95,7 @@
         // menu slide down animation
         max-height: 0;
         transition: max-height 0.2s ease-in-out;
-        box-shadow: 2px 2px 8px rgba(black,0.25);
+        box-shadow: 2px 4px 8px rgba(black,0.25);
         li {
             padding: 0;
         }
