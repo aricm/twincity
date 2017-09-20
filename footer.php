@@ -1,14 +1,5 @@
 </main>
 
-<div class="container-fluid footer-contact-container">
-    <div class="container">
-    <h4 class="oswald inverse">Request a Quick Quote</h4>
-    <?php // echo do_shortcode( '[contact-form-7 id="258" title="Footer Form" html_class="footer-form"]' ); ?>
-    -- form --
-    </div>
-</div>
-
-
 <div class="container-fluid ng-inverse subfooter-wrap">
     <div class="container subfooter">
 

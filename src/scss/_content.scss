@@ -1,6 +1,22 @@
 main {
     min-height: 900px;
 }
+.blueul{
+        margin-top: 0;
+        margin-bottom: 1rem;
+        padding-left: 0px;
+        list-style: none;
+
+    li::before {
+        content: "• ";
+        color: $primaryColor;
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+.subpage{
+    margin-top: 20px;
+}
 .ng-inverse {
     background-color: $primaryColor;
     color: #fff;
@@ -36,7 +52,7 @@ main {
 
     li::before {
         content: "• ";
-        color: $secondaryColor;
+        color: $primaryColor;
         font-size: 20px;
         line-height: 28px;
     }
@@ -44,6 +60,49 @@ main {
         vertical-align: bottom;
         position: absolute;
         bottom: -45px;
+    }
+    .col{
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+}
+.servicecontent{
+    overflow: hidden;
+    .col-6 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 45%;
+        -ms-flex: 0 0 45%;
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+    .row{
+        margin: 40px 0 40px 0px;
+    }
+    .servicetype{
+        border: 3px solid #F2F2F2;
+        padding: 0px;
+    }
+    .iconholder{
+            float: left;
+            background-color: #F2F2F2;
+            padding: 40px 10px;
+            height: 100%;
+
+        img{
+            width: 135px;
+            padding: 0px;
+        }
+    }
+    .contentholder{
+        padding: 20px;
+        clear: none;
+        display: table;
+        h4{
+            font-family: $headingFontAlt;
+            color: black;
+            font-size: 25px;
+            font-weight: bold;
+        }
     }
 }
 .fifty-fifty-section-background {
@@ -96,4 +155,142 @@ main {
     text-align: center;
     margin: auto;
     display: block;
+}
+.associationTitle{
+    text-align: center;
+    padding: 0px 0px 40px 0px;
+    color: $primaryColor;
+    margin-top: -40px;
+}
+.contactTitle{
+    padding: 40px 0px;
+    text-align: center;
+    font-family: $headingFont;
+    color: white;
+}
+input{
+    width: 100%;
+    padding: 15px 0px 15px 10px;
+    font-family: $bodyFont;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 3px solid white;
+}
+select{
+    width: 100%;
+    padding: 15px 0px 15px 10px;
+    color: white;
+    font-size: 20px;
+    font-family: $bodyFont;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 3px solid white;
+
+    option{
+        color: black!important;
+    }
+}
+.quickcontact{
+    ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: white;
+    }
+
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: white;
+    }
+
+    :-ms-input-placeholder {
+        /* IE 10+ */
+        color: white;
+    }
+
+    :-moz-placeholder {
+        /* Firefox 18- */
+        color: white;
+    }
+    .col{
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .homerecaptcha {
+        transform: scale(0.85);
+        -webkit-transform: scale(0.85);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+    }
+    .formbutton{
+        background-color: $secondaryColor;
+        display: block;
+        width: initial;
+        padding: 15px 70px;
+        border: 0px;
+        font-family: $headingFont;
+        font-size: 16px;
+        margin: auto;
+        margin-top: 25px;
+        cursor: pointer;
+
+        &:hover{
+        background-color: $primaryColor;
+        }
+    }
+    .col-lg-2 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 16.666667%;
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 19.666667%;
+        max-width: 19.666667%;
+    }
+}
+.backgroundcover{
+    background-size: cover;
+}
+.subpagebackground {
+        background-image: url('http://localhost:81/Wordpress-twincity/wp-content/uploads/2017/09/SubpageBanner.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        background-position: center center;
+    .subpagetitle {
+        font-size: 50px;
+        padding: 20px 0px;
+        font-weight: bold;
+        color: white;
+        span{
+            letter-spacing: -10px;
+            margin-right: 15px;
+            }
+    }
+    .subpagetagline{
+        font-family: $headingFontAlt;
+        font-weight: bold;
+        font-size: 25px;
+        color: white;
+    }
+    .subpageicon{
+        height: 112px;
+        margin-top: 20px;
+    }
+
+}
+.ServicesTitle{
+    font-family: $headingFont;
+    font-size: 25px;
+    color: $primaryColor;
+    font-weight: bold;
+    padding: 20px 0px;
+}
+.largepadding{
+    padding: 50px 15px;
+}
+.warehousequote{
+    text-align: center;
+    color: $primaryColor;
+    font-family: $headingFont;
+    font-size: 23px;
+    padding: 80px 0px;
 }
