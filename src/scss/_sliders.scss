@@ -29,6 +29,34 @@
     }
 }
 
+.galleryslide{
+    .slick-home-next,
+    .slick-home-prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-family: "Poppins",
+        serif;
+        background-color: $primaryColor;
+        color: white;
+        cursor: pointer;
+        font-size: 2.5rem;
+        font-weight: 100;
+        border-radius: 0px;
+        padding: 0rem;
+        line-height: 0;
+        width: 36px;
+        height: 36px;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        padding-bottom: 0rem;
+        &:hover {
+            background-color: $secondaryColor;
+        }
+        &:focus {}
+    }
+}
 .slick-home-prev {
     left: 20px;
 }

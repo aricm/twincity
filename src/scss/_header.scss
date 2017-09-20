@@ -44,6 +44,13 @@
     .product-mast {
         // background-position: right 60px;
     }
+    header {
+        position: fixed;
+        display: block;
+        width: 100%;
+        background-color: white;
+        z-index: 99999;
+    }
 }
 
 .slide-margin-left {
@@ -59,7 +66,7 @@
 }
 
 @media screen and (max-width: 1199px) {
-    .flex-header {
+.flex-header {
         width: 100%;
         .logo,
         .sticky-logo {
@@ -181,7 +188,7 @@
 }
 
 @media screen and (max-width: 629px) {
-    .flex-header {
+.flex-header {
         justify-content: center;
         .header-block {
             .title {
@@ -194,10 +201,11 @@
             }
         }
     }
+
     .sticky-header {
         .site-header,
         .header-nav {
-            height: 45px;
+            top: 0px;
         }
         .nav-toggle,
         .get-quote {
@@ -216,12 +224,11 @@
     body:not(.sticky-header) {
         .site-header {
             height: auto;
-            padding: 0 1rem;
         }
         .flex-header {
             display: block;
             .logo {
-                display: none;
+              padding: 5px 0;
             }
             .sticky-logo {
                 position: static;
@@ -245,7 +252,6 @@
             }
         }
         .header-nav {
-            margin-right: -1rem;
         }
     }
 }

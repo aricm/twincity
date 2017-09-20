@@ -38,5 +38,28 @@
         </div>
     </div>
 </header>
+<?php 
+if ( is_home() ) {
+
+}
+if ( is_front_page() ) {
+
+} else {
+    echo '<div class="container-fluid  subpagebackground">';
+        echo '<div class="container">';
+            echo '<div class="row">';
+                echo '<div class="col col-lg-12">';
+                echo '<div class="bannertagline">';
+                echo '<img src="http://localhost:81/Wordpress-twincity/wp-content/uploads/2017/09/SubPageThumbnails.png" class="subpageicon"/>';
+                echo '<h1 class="subpagetitle">'.get_post_meta($post->ID, 'page-title', true).'</h1>';
+                echo '<h4 class="subpagetagline">'.get_post_meta($post->ID, 'tag-line', true).'</h4>';
+                echo '</div>';
+             echo '</div>';
+            echo '</div>';
+        echo '</div>';
+    echo '</div>';
+
+}
+?>
 
 <main>
