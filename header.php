@@ -17,7 +17,7 @@
 
         <div class="header-block">
             <div class="family-owned">
-                <a class="social" href="#" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/linkedin.png" alt=""></a>
+                <a class="social" href="https://www.linkedin.com/company/8863788/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/linkedin.png" alt=""></a>
                 <em>Family Owned Business Since 1974</em>
             </div>
             <div class="phone">
@@ -50,7 +50,7 @@ if ( is_front_page() ) {
             echo '<div class="row">';
                 echo '<div class="col col-lg-12">';
                 echo '<div class="bannertagline">';
-                echo '<img src="http://localhost:81/Wordpress-twincity/wp-content/uploads/2017/09/SubPageThumbnails.png" class="subpageicon"/>';
+                echo '<img src="http://209.126.119.193/~tcwlogistics/wp-content/uploads/2017/09/SubPageThumbnails.png" class="subpageicon"/>';
                 echo '<h1 class="subpagetitle">'.get_post_meta($post->ID, 'page-title', true).'</h1>';
                 echo '<h4 class="subpagetagline">'.get_post_meta($post->ID, 'tag-line', true).'</h4>';
                 echo '</div>';
