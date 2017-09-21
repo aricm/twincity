@@ -35,11 +35,11 @@
             <nav class="f-item footer-nav" role="navigation">
                 <ul>
                     <li><a href="<?php echo home_url(); ?>">Home</a></li>
-                    <li><a href="<?php echo home_url('/products/'); ?>">Services</a></li>
-                    <li><a href="<?php echo home_url('/products/'); ?>">FACILITIES</a></li>
-                    <li><a href="<?php echo home_url('/products/'); ?>">TECHNOLOGY</a></li>
-                    <li><a href="<?php echo home_url('/about/'); ?>">About Us</a></li>
-                    <li><a href="<?php echo home_url('/news/'); ?>">FAQ</a></li>
+                    <li><a href="<?php echo home_url('/services/'); ?>">Services</a></li>
+                    <li><a href="<?php echo home_url('/facilities/'); ?>">FACILITIES</a></li>
+                    <li><a href="<?php echo home_url('/technology/'); ?>">TECHNOLOGY</a></li>
+                    <li><a href="<?php echo home_url('/about-us/'); ?>">About Us</a></li>
+                    <li><a href="<?php echo home_url('/blog/'); ?>">FAQ</a></li>
                     <li><a href="<?php echo home_url('/contact/'); ?>">Contact</a></li>
                 </ul>
             </nav>
