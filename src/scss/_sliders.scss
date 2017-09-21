@@ -217,6 +217,18 @@
             padding: 0;
         }
     }
+    .galleryslide .slider-content {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            color: #fff !important;
+        .inner-content {
+            position: static;
+            transform: none;
+            padding: 0;
+        }
+    }
     .slider-md-hidden {
         display: none !important;
     }

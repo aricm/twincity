@@ -192,6 +192,102 @@ select{
         color: black!important;
     }
 }
+.contactsection {
+    padding-top: 60px;
+    .phone{
+            margin-top: -18px;
+            font-family: $headingFont;
+            font-size: 20px;
+            margin-bottom: 40px;
+        span{
+            font-family: $headingFont;
+            font-size: 25px;
+            color: #58595B;
+        }
+        a{
+            color: #58595B;
+        }
+    }
+    .address {
+        font-family: $headingFont;
+        font-size: 20px;
+        margin-bottom: 40px;
+        margin-top: -5px;
+    }
+    .availability {
+        font-family: $headingFont;
+        font-size: 20px;
+        margin-top: 50px;
+        margin-bottom: 65px;
+    }
+        ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+         color: #58595B;
+    }
+        ::-moz-placeholder {
+        /* Firefox 19+ */
+         color: #58595B;
+    }
+        :-ms-input-placeholder {
+        /* IE 10+ */
+         color: #58595B;
+    }
+        :-moz-placeholder {
+        /* Firefox 18- */
+         color: #58595B;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 15px 0px 15px 10px;
+        font-family: $bodyFont;
+        font-size: 16px;
+        color: #58595B;
+        font-weight: bold;
+        background-color: #F2F2F2;
+        border: 0px solid white;
+        margin-bottom: 20px;
+    }
+
+    select {
+        width: 100%;
+        padding: 15px 0px 15px 10px;
+        color: #58595B;
+        font-size: 16px;
+        font-family: $bodyFont;
+        font-weight: bold;
+        background-color: #F2F2F2;
+        border: 0px solid white;
+        margin-bottom: 20px;
+        option {
+            color: black!important;
+        }
+    }
+    .formbutton {
+        background-color: $secondaryColor;
+        display: block;
+        width: initial;
+        padding: 15px 70px;
+        border: 0px;
+        font-family: $headingFont;
+        font-size: 16px;
+        float: left;
+        color:white;
+        margin-top: 25px;
+        cursor: pointer;
+        &:hover {
+            background-color: $primaryColor;
+        }
+    }
+    form{
+        p{
+            font-family: arial, sans-serif;
+            font-size: 18px;
+            padding: 0px;
+            color: #58595B;
+            margin: 0px;
+        }
+    }
+}
 .quickcontact{
     ::-webkit-input-placeholder {
         /* Chrome/Opera/Safari */
@@ -292,5 +388,55 @@ select{
     color: $primaryColor;
     font-family: $headingFont;
     font-size: 23px;
-    padding: 80px 0px;
+    padding: 60px 0px;
+}
+.techfeatures{
+    float: left;
+    margin-right: 20px;
+}
+.techcontainer{
+    padding: 30px 0px;
+    h4{
+        font-family: $headingFontAlt;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 20px 0px;
+        color: black;
+    }
+    .servicetype {
+        border: 3px solid #F2F2F2;
+        padding: 0px;
+        margin-left: 25px;
+    }
+}
+.imageshowcase {
+    padding-right: 0px;
+    padding-left: 0px;
+    overflow: hidden;
+    .col-4 {
+        padding: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+.contactpagebottom{
+    margin-bottom: -16px;
+    margin-top: 60px;
+}
+.contacticon{
+    float: left;
+    margin-right: 40px;
+}
+.modal {
+    z-index: 9999999999!important;
+}
+.modal-dialog {
+    max-width: 540px;
+    margin: 30px auto;
+}
+#wpadminbar {
+    z-index: 998!important;
+}
+.textcenter{
+    text-align: center;
 }

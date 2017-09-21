@@ -61,17 +61,17 @@
 
 </footer>
 
-<div class="modal fade" id="popForm" tabindex="-1" role="dialog">
+<div class="modal fade contactsection" id="popForm" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header popover-header">
-                <h1 class="modal-title title">Get a Quote</h1>
+                <h1 class="modal-title title">Get a Quick Quote</h1>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <?php // echo do_shortcode( '[contact-form-7 id="254" title="Popover Form" html_class="popover-form"]' ); ?>
+                <?php echo do_shortcode( '[contact-form-7 id="254" title="Contact Page"]' ); ?>
             </div>
         </div>
     </div>
