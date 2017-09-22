@@ -432,7 +432,8 @@ select{
 }
 .modal-dialog {
     max-width: 540px;
-    margin: 30px auto;
+    margin: 0px auto;
+    overflow: auto;
 }
 #wpadminbar {
     z-index: 998!important;

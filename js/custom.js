@@ -19,7 +19,7 @@
 
 
         // Mobile or desktop nav
-        if( windowWidth < 1050 ) {
+        if( windowWidth < 992 ) {
             $(nav).removeClass('main-nav').addClass('mobile-nav');
         } else {
             $(nav).addClass('main-nav').removeClass('mobile-nav');

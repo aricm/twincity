@@ -1,3 +1,7 @@
+header{
+    background-color: white;
+    transition:all 1s ease-in 0s;
+}
 .flex-header {
     display: flex;
     flex-flow: row wrap;
@@ -50,6 +54,7 @@
         width: 100%;
         background-color: white;
         z-index: 999;
+        transition: all 1s ease-in 0s;
     }
 }
 
@@ -63,21 +68,6 @@
     right: 10%;
     top: 50%;
     transform: translateY(-50%);
-}
-
-@media screen and (max-width: 1199px) {
-.flex-header {
-        width: 100%;
-        .logo,
-        .sticky-logo {
-            padding-left: 1rem;
-        }
-        .header-block {
-            .inner-block {
-                padding-right: 1rem;
-            }
-        }
-    }
 }
 
 .close-nav {
@@ -115,22 +105,25 @@
     }
 }
 
-@media screen and (max-width: 1049px) {
-    .nav-toggle {
-        display: block;
-        margin-right: 2px;
-    }
-    .sticky-header {
-        .nav-toggle {
-            line-height: 60px;
+@media screen and (max-width: $screen-lg-min) {
+    .flex-header {
+        width: 100%;
+        .logo,
+        .sticky-logo {
+            padding-left: 1rem;
+            transition: all 1s ease-in 0s;
+        }
+        .header-block {
+            .inner-block {
+                padding-right: 1rem;
+                transition: all 1s ease-in 0s;
+            }
         }
     }
-    .close-nav {
-        display: block;
-    }
-    .main-nav {
-        display: none;
-    }
+}
+
+@media screen and (max-width: 1049px) {
+
 }
 
 @media screen and (max-width: 991px) {
@@ -206,6 +199,7 @@
         .site-header,
         .header-nav {
             top: 0px;
+            transition: all 1s ease-in 0s;
         }
         .nav-toggle,
         .get-quote {
@@ -216,6 +210,7 @@
             padding-right: 1rem;
             flex: 0 1 50%;
             align-self: center;
+            transition: all 1s ease-in 0s;
         }
     }
 }
@@ -224,11 +219,13 @@
     body:not(.sticky-header) {
         .site-header {
             height: auto;
+            transition: all 1s ease-in 0s;
         }
         .flex-header {
             display: block;
             .logo {
               padding: 5px 0;
+            transition: all 1s ease-in 0s;
             }
             .sticky-logo {
                 position: static;
@@ -238,6 +235,7 @@
                 padding: 0;
                 text-align: center;
                 opacity: 1;
+                transition: all 1s ease-in 0s;
             }
             .header-block {
                 text-align: center !important;
@@ -245,10 +243,12 @@
                     align-items: center;
                     margin-bottom: 1rem;
                     padding: 0;
+                    transition: all 1s ease-in 0s;
                 }
             }
             .phone {
                 text-align: center !important;
+                transition: all 1s ease-in 0s;
             }
         }
         .header-nav {
