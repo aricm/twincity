@@ -46,7 +46,7 @@
 
             <div class="f-item associations">
                 <a href="#"><img src="<?php bloginfo('template_url'); ?>/img/assoc-sewa-sm.png" alt=""></a>
-                <a href="#"><img src="<?php bloginfo('template_url'); ?>/img/assoc-data-chambers-sm.png" alt=""></a>
+                <!----a href="#"><img src="<?php bloginfo('template_url'); ?>/img/assoc-data-chambers-sm.png" alt=""></a---------->
                 <a href="#"><img src="<?php bloginfo('template_url'); ?>/img/assoc-ncwa-sm.png" alt=""></a>
             </div>
         </div>
@@ -88,7 +88,7 @@ var siteHeader = jQuery(".site-header");
 var mainNav = jQuery("#mainNav");
 
 jQuery(document).on("scroll", function() {
-    if ( jQuery(document).scrollTop() > 156 ) {
+    if ( jQuery(document).scrollTop() > 1 ) {
         if(!isSticky) {
             jQuery("body").addClass("sticky-header");
             isSticky = true;

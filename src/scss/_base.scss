@@ -98,16 +98,5 @@ h1,h2,h3,h4 {
 }
 
 @media screen and (min-width: 1050px) {
-    // release no-scroll above mobile viewport (max-width: 1049px)
-    body {
-        &.no-scroll {
-            overflow: auto;
-            #openNavOverlay {
-                display: none;
-            }
-        }
-    }
-    .close-nav {
-        display: none;
-    }
+
 }

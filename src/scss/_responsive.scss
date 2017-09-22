@@ -1,14 +1,4 @@
 @media only screen and (max-width: $screen-lg-min) {
-    .sliderbutton {
-        line-height: 8px!important;
-        padding: 5px 12px!important;
-        font-size: 12px!important;
-        margin-top: 10px!important;
-    }
-    .dropdown-menu {
-        display: block!important;
-        position: relative!important;
-    }
     .quickcontact {
         .col-md-6 {
             -webkit-box-flex: 0;
@@ -24,6 +14,51 @@
 }
 
 @media only screen and (max-width: $screen-md-min) {
+    // release no-scroll above mobile viewport (max-width: 1049px)
+    body {
+        &.no-scroll {
+            overflow: auto;
+            #openNavOverlay {
+                display: none;
+            }
+        }
+    }
+
+    .techcontainer .servicetype {
+        border: 3px solid #F2F2F2;
+        padding: 0px;
+        margin-left: 0px;
+    }
+    .sliderbutton {
+        line-height: 8px!important;
+        padding: 5px 12px!important;
+        font-size: 12px!important;
+        margin-top: 10px!important;
+    }
+
+    .dropdown-menu {
+        display: block!important;
+        position: relative!important;
+    }
+    .nav-toggle {
+        display: block;
+        margin-right: 2px;
+    }
+    .header-nav .nav-toggle {
+        display: block;
+    }
+    .sticky-header {
+        .nav-toggle {
+            line-height: 60px;
+        }
+    }
+    .close-nav {
+        display: block;
+    }
+
+    .main-nav {
+        display: none;
+    }
     .sticky-header {
         .product-mast {
             // background-position: right 60px;
@@ -47,6 +82,7 @@
     }
     .subpagebackground .subpageicon {
         max-height: 112px;
+        max-width: 360px;
         margin-top: 20px;
     }
     .flex-header {
@@ -157,6 +193,46 @@
         position: relative;
         bottom: 0px;
     }
+    .servicecontent .iconholder {
+        float: none;
+        background-color: #F2F2F2;
+        padding: 20px 10px;
+        height: initial;
+        width: 100%;
+        text-align: center;
+        max-width: 360px;
+    }
+    .flex-footer .associations {
+        padding-right: 0px;
+    }
+    .flex-footer .associations a {
+        display: inline-block;
+        margin-right: 8px;
+        margin-bottom: 10px;
+    }
+    .subfooter .phone {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        font-family: "Oswald", sans-serif;
+        font-size: 20px;
+        padding: 20px 0px;
+    }
+    .slick-home-next,
+    .slick-home-prev {
+        position: absolute;
+        transform: translateY(-50%);
+        font-family: "Poppins", serif;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        cursor: pointer;
+        font-size: 5rem;
+        font-weight: 100;
+        border-radius: 0px;
+        padding: 0.5rem 0.5rem;
+        line-height: 0.7;
+        padding-bottom: 0rem;
+    }
 }
 
 @media only screen and (max-width: $screen-xsm-max) {
@@ -175,12 +251,21 @@
         width: 100%;
         margin-top: 20px;
     }
-    .servicecontent .iconholder {
-        float: none;
-        background-color: #F2F2F2;
-        padding: 20px 10px;
-        height: initial;
+    .techcontainer {
+        padding: 30px 0px;
+        width: 90%;
+    }
+    .techfeatures {
+        float: left;
+        margin-right: 0px;
         width: 100%;
         text-align: center;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .techcontainer {
+        padding: 30px 0px;
+        width: 85%;
     }
 }
