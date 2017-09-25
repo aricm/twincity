@@ -71,7 +71,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <?php echo do_shortcode( '[contact-form-7 id="254" title="Contact Page"]' ); ?>
+                <?php echo do_shortcode( '[gravityform id="3" title="false" description="false" ajax="true"]' ); ?>
             </div>
         </div>
     </div>

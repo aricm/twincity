@@ -167,6 +167,7 @@ main {
     text-align: center;
     font-family: $headingFont;
     color: white;
+    width: 100%;
 }
 input{
     width: 100%;
@@ -194,6 +195,17 @@ select{
 }
 .contactsection {
     padding-top: 60px;
+    .gform_fields li {
+        list-style: none;
+        display: inline-block;
+        padding-right: 5px;
+        padding-left: 5px;
+        float: left;
+        width: 100%;
+    }
+    .contactrecap label{
+        display: none!important;
+    }
     .phone{
             margin-top: -18px;
             font-family: $headingFont;
@@ -247,6 +259,9 @@ select{
         border: 0px solid white;
         margin-bottom: 20px;
     }
+    textarea {
+        height: 135px;
+    }
 
     select {
         width: 100%;
@@ -262,24 +277,24 @@ select{
             color: black!important;
         }
     }
-    .formbutton {
-        background-color: $secondaryColor;
-        display: block;
-        width: initial;
-        padding: 15px 70px;
-        border: 0px;
-        font-family: $headingFont;
-        font-size: 16px;
-        float: left;
-        color:white;
-        margin-top: 25px;
-        cursor: pointer;
+    .formbutton, .gform_button {
+    background-color: $secondaryColor;
+    display: block;
+    width: initial;
+    padding: 15px 70px;
+    border: 0px;
+    font-family: $headingFont;
+    font-size: 16px;
+    float: left;
+    color:white;
+    margin-top: 25px;
+    cursor: pointer;
         &:hover {
             background-color: $primaryColor;
         }
     }
     form{
-        p{
+        p, label{
             font-family: arial, sans-serif;
             font-size: 18px;
             padding: 0px;
@@ -312,38 +327,70 @@ select{
         padding-right: 5px;
         padding-left: 5px;
     }
-    .homerecaptcha {
+    .homerecaptcha, .ginput_recaptcha {
         transform: scale(0.85);
         -webkit-transform: scale(0.85);
         transform-origin: 0 0;
         -webkit-transform-origin: 0 0;
     }
-    .formbutton{
-        background-color: $secondaryColor;
-        display: block;
-        width: initial;
-        padding: 15px 70px;
-        border: 0px;
-        font-family: $headingFont;
-        font-size: 16px;
-        margin: auto;
-        margin-top: 25px;
-        cursor: pointer;
+    .formbutton, #gform_submit_button_1 {
+    background-color: $secondaryColor;
+    display: block;
+    width: initial;
+    padding: 15px 70px;
+    border: 0px;
+    font-family: $headingFont;
+    font-size: 16px;
+    margin: auto;
+    top: 25px;
+    position: relative;
+    cursor: pointer;
 
         &:hover{
         background-color: $primaryColor;
         }
     }
-    .col-lg-2 {
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 0 16.666667%;
-        -ms-flex: 0 0 16.666667%;
-        flex: 0 0 19.666667%;
-        max-width: 19.666667%;
+    .col-lg-2, .gfield {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 16.666667%;
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 19.666667%;
+    max-width: 19.666667%;
     }
+}
+.gform_wrapper{
+    width: 100%;
+    float: left;
+    display: flex;
+    margin-top: -15px;
+}
+.ginput_container_text{
+    width: 100%;
+}
+.gform_fields {
+    padding-left: 0px;
+    li{
+        list-style: none;
+        display: flex;
+        padding-right: 5px;
+        padding-left: 5px;
+        float: left;
+        margin-bottom: 10px;
+    }
+}
+.gform_body, .gform_footer {
+    float: left;
+    clear: both;
+}
+.gform_footer {
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-bottom: 50px;
 }
 .backgroundcover{
     background-size: cover;
+    height: auto;
 }
 .subpagebackground {
         background-image: url('http://209.126.119.193/~tcwlogistics/wp-content/uploads/2017/09/SubpageBanner.jpg');
@@ -440,4 +487,14 @@ select{
 }
 .textcenter{
     text-align: center;
+}
+.articlespacing{
+    padding-bottom: 25px;
+}
+.blog .subpagebackground .subpagetitle span {
+    letter-spacing: -12px;
+    margin-right: 15px;
+}
+.quickcontact .gfield_label{
+    display: none!important;
 }
