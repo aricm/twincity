@@ -39,10 +39,22 @@
     </div>
 </header>
 <?php 
-if ( is_home() ) {
-
-}
-if ( is_front_page() ) {
+if (is_front_page())
+{  }
+elseif(is_home()) {
+    echo '<div class="container-fluid  subpagebackground">';
+        echo '<div class="container">';
+            echo '<div class="row">';
+                echo '<div class="col col-lg-12">';
+                echo '<div class="bannertagline">';
+                echo '<img src="http://209.126.119.193/~tcwlogistics/wp-content/uploads/2017/09/SubPageThumbnails.png" class="subpageicon"/>';
+                echo '<h1 class="subpagetitle"><span>\ \ \</span>Twin City Blog</h1>';
+                echo '<h4 class="subpagetagline">What Is New With Twin City?</h4>';
+                echo '</div>';
+             echo '</div>';
+            echo '</div>';
+        echo '</div>';
+    echo '</div>';
 
 } else {
     echo '<div class="container-fluid  subpagebackground">';
@@ -58,7 +70,6 @@ if ( is_front_page() ) {
             echo '</div>';
         echo '</div>';
     echo '</div>';
-
 }
 ?>
 

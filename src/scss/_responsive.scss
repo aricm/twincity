@@ -1,19 +1,65 @@
 @media only screen and (max-width: $screen-lg-min) {
     .quickcontact {
-        .col-md-6 {
+            .col-md-6 {
             -webkit-box-flex: 0;
             -webkit-flex: 0 0 50%;
             -ms-flex: 0 0 50%;
             flex: 0 0 50%;
             max-width: 50%;
         }
+        .gfield {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 0 100%;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .gform_fields li {
+            list-style: none;
+            display: block;
+            padding-right: 5px;
+            padding-left: 5px;
+            float: left;
+            width: 100%;
+            margin-bottom: 10px;
+        }
          .formbutton {
              margin-top: 0px;
          }
     }
+
+    .slider-content h3 {
+        font-size: 42px;
+        color: white;
+        text-align: center;
+    }
+
+    .slider-content p:last-child {
+        margin-bottom: 0px;
+        font-size: 32px;
+        line-height: 1;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        margin-top: 0px;
+        font-family: "Oswald", sans-serif;
+    }
+
+    .sliderbutton {
+        line-height: 8px !important;
+        padding: 10px 20px !important;
+        font-size: 16px !important;
+        margin-top: 10px !important;
+    }
 }
 
 @media only screen and (max-width: $screen-md-min) {
+    .home.sticky-header main {
+        margin-top: 160px;
+    }
+    .sticky-header .subpagebackground {
+        margin-top: 160px;
+    }
     // release no-scroll above mobile viewport (max-width: 1049px)
     body {
         &.no-scroll {
@@ -46,11 +92,6 @@
     }
     .header-nav .nav-toggle {
         display: block;
-    }
-    .sticky-header {
-        .nav-toggle {
-            line-height: 60px;
-        }
     }
     .close-nav {
         display: block;
@@ -134,7 +175,7 @@
     }
     .header-nav .nav-toggle {
         display: block;
-        padding: 20px;
+        padding: 10px 20px;
         margin: auto;
     }
     .get-quote {
@@ -156,7 +197,7 @@
         font-weight: bold;
         color: white;
         text-align: center;
-        margin-top: 25px;
+        margin-top: 0px;
         font-family: "Oswald", sans-serif;
     }
     .sliderbutton {
@@ -180,7 +221,7 @@
 
 @media only screen and (max-width: $screen-sm-max) {
     .quickcontact {
-        .col-sm-12 {
+            .col-sm-12, .gfield {
             -webkit-box-flex: 0;
             -webkit-flex: 0 0 100%;
             -ms-flex: 0 0 100%;
@@ -233,6 +274,12 @@
         line-height: 0.7;
         padding-bottom: 0rem;
     }
+    .home.sticky-header main {
+        margin-top: 210px;
+    }
+    .sticky-header .subpagebackground {
+        margin-top: 210px;
+    }
 }
 
 @media only screen and (max-width: $screen-xsm-max) {
@@ -261,6 +308,13 @@
         width: 100%;
         text-align: center;
         margin-bottom: 20px;
+    }
+    .subpagebackground .subpagetitle {
+        font-size: 42px;
+        padding: 10px 0px;
+    }
+    .subpagebackground .subpagetagline {
+        font-size: 22px;
     }
 }
 @media only screen and (max-width: 400px) {

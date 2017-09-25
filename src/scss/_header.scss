@@ -42,8 +42,6 @@ header{
     }
 }
 
-
-
 .sticky-header {
     .product-mast {
         // background-position: right 60px;
@@ -55,7 +53,14 @@ header{
         background-color: white;
         z-index: 999;
         transition: all 1s ease-in 0s;
+        top: 0px;
     }
+    .subpagebackground {
+    margin-top: 210px;
+    }
+}
+.home.sticky-header main {
+    margin-top: 210px;
 }
 
 .slide-margin-left {
