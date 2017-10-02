@@ -47,7 +47,7 @@ header{
         // background-position: right 60px;
     }
     header {
-        position: fixed;
+        /*position: fixed;*/
         display: block;
         width: 100%;
         background-color: white;
@@ -55,12 +55,20 @@ header{
         transition: all 1s ease-in 0s;
         top: 0px;
     }
+
+    .header-nav{
+        position: fixed;
+        z-index: 99;
+        width: 100%;
+        top: 0px;
+    }
+
     .subpagebackground {
-    margin-top: 210px;
+        margin-top: 65px;
     }
 }
 .home.sticky-header main {
-    margin-top: 210px;
+    margin-top: 65px;
 }
 
 .slide-margin-left {

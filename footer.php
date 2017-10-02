@@ -3,7 +3,8 @@
 <div class="container-fluid ng-inverse subfooter-wrap">
     <div class="container subfooter">
 
-        <div class="f-item logo"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo-footer.png" alt=""></a></div>
+        <div class="f-item logo"><a href="<?php echo home_url(); ?>">
+            <img src="<?php bloginfo('template_url'); ?>/img/logo-footer.png" alt=""></a></div>
 
         <div class="f-item phone">
             <p>
@@ -88,7 +89,7 @@ var siteHeader = jQuery(".site-header");
 var mainNav = jQuery("#mainNav");
 
 jQuery(document).on("scroll", function() {
-    if ( jQuery(document).scrollTop() > 1 ) {
+    if ( jQuery(document).scrollTop() > 157 ) {
         if(!isSticky) {
             jQuery("body").addClass("sticky-header");
             isSticky = true;
