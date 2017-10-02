@@ -52,7 +52,7 @@
         </div>
 
         <div class="flex-footer">
-            <div class="f-item copyright">Copyright &copy; <?php echo date("Y"); ?> Bins4 Shredding Inc. All rights reserved.</div>
+            <div class="f-item copyright">Copyright &copy; <?php echo date("Y"); ?> <?php echo bloginfo('name'); ?>. All rights reserved.</div>
 
             <div class="f-item netgain">Website Designed by <a href="http://www.netgainseo.com/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/netgain.png" alt=""></a></div>
         </div>
