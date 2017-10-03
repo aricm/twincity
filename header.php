@@ -13,7 +13,11 @@
 <header class="site-header">
     <div class="container flex-header">
 
-        <div class="logo"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""></a></div>
+        <div class="logo">
+            <a href="<?php echo home_url(); ?>">
+                <img src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="">
+            </a>
+        </div>
 
         <div class="header-block">
             <div class="family-owned">
