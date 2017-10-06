@@ -26,7 +26,7 @@
             </div>
             <div class="phone">
             CALL US TODAY
-            <a href="tel:13364997221">(336) 499-7221</a></div>
+            <a href="tel:13363314975">(336) 331-4975</a></div>
             <div class="address">3302 Old Lexington Road, Winston-Salem, NC 27107</div>
         </div>
 

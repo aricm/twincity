@@ -11,7 +11,7 @@
                 <img src="<?php bloginfo('template_url'); ?>/img/i-phone.png" alt="">
             </p>
             <p>
-                <span>Phone: <a href="tel:13364997221">(336) 499-7221</a></span>
+                <span>Phone: <a href="tel:13363314975">(336) 331-4975</a></span>
                 Fax Us: (336) 499-6011
             </p>
         </div>
