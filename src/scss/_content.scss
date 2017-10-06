@@ -368,8 +368,8 @@ select{
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 16.666667%;
     -ms-flex: 0 0 16.666667%;
-    flex: 0 0 25%;
-    width: 25%;
+    flex: 0 0 33%;
+    width: 33%;
     }
     .ginput_container_select{
         width: 100%;
@@ -455,8 +455,9 @@ select{
     padding: 60px 0px;
 }
 .techfeatures{
-    float: left;
     margin-right: 20px;
+    min-width: 450px;
+    background: #f2f2f2;
 }
 .techcontainer{
     padding: 30px 0px;
@@ -471,6 +472,7 @@ select{
         border: 3px solid #F2F2F2;
         padding: 0px;
         margin-left: 25px;
+        display: flex;
     }
 }
 .imageshowcase {
@@ -519,7 +521,8 @@ select{
 
 
 #field_3_7,
-#field_1_5{
+#field_1_5,
+#field_1_4{
     display: none;
 }
 

@@ -35,7 +35,8 @@
             position: relative;
         }
     }
-    ul > li.current_page_item:not(.get-quote):after {
+    ul > li.current_page_item:not(.get-quote):after,
+    ul > li.current_page_parent:not(.get-quote):after {
         content: '';
         position: absolute;
         width: 100%;
@@ -96,6 +97,21 @@
         box-shadow: 2px 4px 8px rgba(black,0.25);
         li {
             padding: 0;
+
+            &:hover{
+                background: #231F20;
+                a{
+                    color: #fff;
+                }
+            }
+            &:after{
+                display: none;
+            }
+
+            &.current_page_item{
+                background: #231F20;
+            }
+
         }
         a {
             display: block;
