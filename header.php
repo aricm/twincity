@@ -4,7 +4,7 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="icon" href="http://209.126.119.193/~tcwlogistics/wp-content/uploads/2017/09/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="<?php echo bloginfo('url'); ?>/wp-content/uploads/2017/09/favicon.png" type="image/x-icon" />
     <?php wp_head(); ?>
 </head>
 
@@ -51,7 +51,7 @@ elseif(is_home()) {
             echo '<div class="row">';
                 echo '<div class="col col-lg-12">';
                 echo '<div class="bannertagline">';
-                echo '<img src="http://209.126.119.193/~tcwlogistics/wp-content/uploads/2017/09/SubPageThumbnails.png" class="subpageicon"/>';
+                echo '<img src="'.get_bloginfo('url').'/wp-content/uploads/2017/09/SubPageThumbnails.png" class="subpageicon"/>';
                 echo '<h1 class="subpagetitle"><span>\ \ \</span>Twin City Blog</h1>';
                 echo '<h4 class="subpagetagline">What Is New With Twin City?</h4>';
                 echo '</div>';
@@ -66,7 +66,7 @@ elseif(is_home()) {
             echo '<div class="row">';
                 echo '<div class="col col-lg-12">';
                 echo '<div class="bannertagline">';
-                echo '<img src="http://209.126.119.193/~tcwlogistics/wp-content/uploads/2017/09/SubPageThumbnails.png" class="subpageicon"/>';
+                echo '<img src="'.get_bloginfo('url').'/wp-content/uploads/2017/09/SubPageThumbnails.png" class="subpageicon"/>';
                 echo '<h1 class="subpagetitle">'.get_post_meta($post->ID, 'page-title', true).'</h1>';
                 echo '<h4 class="subpagetagline">'.get_post_meta($post->ID, 'tag-line', true).'</h4>';
                 echo '</div>';
